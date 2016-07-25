@@ -22,3 +22,25 @@ angular.module('starter', ['ionic', 'ngCordova'])
     }
   });
 })
+.controller('myCtrl', function($scope, $cordovaFile) {
+    document.addEventListener('deviceready', function() {
+//        var date = new Date();
+//        var fileName = date.toLocaleDateString() + date.toLocaleTimeString() + ".txt";
+//         console.log(fileName);
+        $cordovaFile.createFile(cordova.file.externalRootDirectory, '2016-07-25-22-44-22.txt', true)
+          .then(function (success) {
+            // success
+            console.log("success");
+          }, function (error) {
+            // error
+            console.log("failure");
+          });
+        $cordovaFile.writeExistingFile(cordova.file.externalRootDirectory, "new_file.txt", "text")
+          .then(function (success) {
+            // success
+          }, function (error) {
+            // error
+          });
+    });
+});
+
