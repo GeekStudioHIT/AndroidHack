@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'starter.appController', 'starter.pickingController', 'starter.bucketsController'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -24,21 +24,40 @@ angular.module('starter', ['ionic'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-
    $stateProvider
-    .state('picking', {
+     .state('app', {
+       url: '/app',
+       abstract: false,
+       templateUrl: 'templates/layout.html',
+       controller: 'appController'
+     })
+    .state('app.picking', {
         url:"/picking",
-        abstract:true,
-        templateUrl: "templates/picking.html"
-    })
-    .state('picking.shelf', {
-      url: "/shelf",
-      views: {
-        'shelf-picking': {
-          templateUrl: "templates/shelf.html",
+        views: {
+            'viewContent': {
+                templateUrl: "templates/pickingPage.html",
+                controller: 'pickingController'
+            }
         }
-      }
-    });
-   $urlRouterProvider.otherwise("/picking/shelf");
+    })
+    .state('app.pickingFinished', {
+        url:"/pickingFinished",
+        views: {
+            'viewContent': {
+                templateUrl:"templates/pickingFinishedPage.html",
+            }
+        }
+    })
+    .state('app.buckets', {
+        url:"/buckets",
+        views: {
+            'viewContent': {
+                templateUrl:"templates/buckets.html",
+                controller:"bucketsController"
+            }
+        }
+    })
+
+   $urlRouterProvider.otherwise("/app/picking");
 })
 
