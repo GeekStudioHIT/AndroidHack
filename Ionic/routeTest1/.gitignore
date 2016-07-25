@@ -3,3 +3,13 @@
 
 node_modules/
 plugins/
+bower.json
+www/
+package.json
+scss/
+config.xml
+platforms/ios/
+gulpfile.js
+hooks/
+resources/
+
