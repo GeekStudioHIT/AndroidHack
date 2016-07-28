@@ -1,0 +1,30 @@
+# Gradle 打包
+- [参考一](http://unclechen.github.io/2015/10/22/Android-Studio-Gradle%E5%AE%9E%E8%B7%B5%E4%B9%8B%E5%A4%9A%E6%B8%A0%E9%81%93%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85+%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AE%A1%E7%90%86/)
+- [参考二](http://www.jianshu.com/p/44d40f8e67c9)
+- [参考三](http://www.cnblogs.com/vir56k/p/4767552.html)
+- [参考四](http://blog.csdn.net/yanbober/article/details/49314255)
+- build.gradle（Project：），整个工程的 build 文件。
+- build.gradle（Module：），一个 Module 的 build 文件。
+- gradle 基于 Groovy 编写。闭包，最小代码库。
+- gradle 是一个容器，实现真正的功能是 Gradle 的插件 Plugin，Plugin 定义各式各样的 Task，Task 是执行任务的基本单元。
+- 版本号？主版本号、副版本号、补丁号。
+- gradlew
+	- gradle wrapper，gradle 的一个包装。
+	- ./gradlew -v 查看版本号。
+	- ./gradlew clean 删除 HelloWorld/app 目录下的 build 文件夹。
+	- ./gradlew build 检查依赖并编译打包。
+	 	- ./gradlew build 会把 debug、release 环境下的包都打出来。
+		- 只生成 release 包，./gradlew assembleRelease。
+	- gradldw build，build 的时候，gradle 会帮你自动下载所依赖的版本的 gradle。gradle build 不行。
+	- 自定义 apk 包名。
+	- 需求：获取命令行输入，输出相应版本 apk。
+		- 更改 versionName
+		- 自定义 apk 包名。
+- 签名
+	- [参考一](http://www.jianshu.com/p/fedd4dcdc967)
+	- [参考二](http://sineyuan.github.io/2015/03/05/android-package-cmd/)
+	- 生成一个密钥。
+		- keytool -genkeypair -alias "testkey" -keyalg "RSA" -keystore "test.keystore" 
+	- 新建一个 keystore.properties 文件。
+	- 修改 apk 名字。
+		- [参考一](http://www.apkfuns.com/gradle-%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E5%90%8E%E7%9A%84apk%E7%9A%84%E5%90%8D%E5%AD%97.html)

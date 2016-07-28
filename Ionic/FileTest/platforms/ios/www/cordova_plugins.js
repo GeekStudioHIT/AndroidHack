@@ -172,13 +172,22 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/com.jjdltc.cordova.plugin.zip/www/JJzip.js",
+        "id": "com.jjdltc.cordova.plugin.zip.JJzip",
+        "pluginId": "com.jjdltc.cordova.plugin.zip",
+        "clobbers": [
+            "JJzip"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-compat": "1.0.0",
-    "cordova-plugin-file": "4.2.0"
+    "cordova-plugin-file": "4.2.0",
+    "com.jjdltc.cordova.plugin.zip": "0.0.4"
 }
 // BOTTOM OF METADATA
 });

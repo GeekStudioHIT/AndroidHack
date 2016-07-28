@@ -179,6 +179,13 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/com.jjdltc.cordova.plugin.zip/www/JJzip.js",
+        "id": "com.jjdltc.cordova.plugin.zip.JJzip",
+        "clobbers": [
+            "JJzip"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -191,7 +198,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.2",
     "ionic-plugin-keyboard": "2.2.1",
     "cordova-plugin-compat": "1.0.0",
-    "cordova-plugin-file": "4.2.0"
+    "cordova-plugin-file": "4.2.0",
+    "com.jjdltc.cordova.plugin.zip": "0.0.4"
 };
 // BOTTOM OF METADATA
 });

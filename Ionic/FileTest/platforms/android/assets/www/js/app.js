@@ -24,23 +24,57 @@ angular.module('starter', ['ionic', 'ngCordova'])
 })
 .controller('myCtrl', function($scope, $cordovaFile) {
     document.addEventListener('deviceready', function() {
-//        var date = new Date();
-//        var fileName = date.toLocaleDateString() + date.toLocaleTimeString() + ".txt";
-//         console.log(fileName);
-        $cordovaFile.createFile(cordova.file.externalRootDirectory, '2016-07-25-22-44-22.txt', true)
+
+        // 创建日志文件，非法文件名：2016/7/27.txt
+        var filename = 'log.log';
+        $cordovaFile.createFile(cordova.file.externalRootDirectory, filename, true)
           .then(function (success) {
-            // success
-            console.log("success");
+            console.log(" create " + filename + " success ");
           }, function (error) {
-            // error
-            console.log("failure");
+            console.log(" create " + filename + " failure ");
           });
-        $cordovaFile.writeExistingFile(cordova.file.externalRootDirectory, "new_file.txt", "text")
+
+        // 以追加的方式写入已存在日志文件。
+        var content = "text\n"
+        $cordovaFile.writeExistingFile(cordova.file.externalRootDirectory, filename, content)
           .then(function (success) {
-            // success
+            console.log(" write to " + filename + " success ");
           }, function (error) {
-            // error
+            console.log(" write to " + filename + " failure ");
           });
+
+        // 定时任务
+        var intervalTime = 1000 * 3600 * 24;
+        setInterval(function() {
+            // 压缩文件
+            var pathToFileInString  = cordova.file.externalRootDirectory + filename;
+            var pathToResultZip     = cordova.file.externalRootDirectory;
+            var dateString = new Date().toLocaleDateString().replace(/\//g, '-');
+            console.log(dateString);
+            var zipFileName = "stationRF." + dateString;
+            JJzip.zip(pathToFileInString, {target:pathToResultZip, name:zipFileName}, function(data){
+                /* Wow everiting goes good, but just in case verify data.success*/
+                console.log(" zip " + filename + " to " + zipFileName + " success ");
+            }, function(error){
+                /* Wow something goes wrong, check the error.message */
+                console.log(" zip " + filename + " to " + zipFileName + " failure ");
+            });
+
+            // 删除被压缩文件
+            $cordovaFile.removeFile(cordova.file.externalRootDirectory, filename)
+              .then(function (success) {
+                console.log(" remove " + filename + " success ");
+              }, function (error) {
+                console.log(" remove " + filename + " success ");
+              });
+
+            // 重新创建文件
+            $cordovaFile.createFile(cordova.file.externalRootDirectory, filename, true)
+              .then(function (success) {
+                console.log(" create " + filename + " success ");
+              }, function (error) {
+                console.log(" create " + filename + " failure ");
+              });
+        }, intervalTime);
     });
 });
-

@@ -23,6 +23,9 @@
         },
         "cordova-plugin-file": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "com.jjdltc.cordova.plugin.zip": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },
     "dependent_plugins": {},
@@ -199,10 +202,19 @@
                 "cordova"
             ],
             "runs": true
+        },
+        {
+            "file": "plugins/com.jjdltc.cordova.plugin.zip/www/JJzip.js",
+            "id": "com.jjdltc.cordova.plugin.zip.JJzip",
+            "pluginId": "com.jjdltc.cordova.plugin.zip",
+            "clobbers": [
+                "JJzip"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-compat": "1.0.0",
-        "cordova-plugin-file": "4.2.0"
+        "cordova-plugin-file": "4.2.0",
+        "com.jjdltc.cordova.plugin.zip": "0.0.4"
     }
 }
