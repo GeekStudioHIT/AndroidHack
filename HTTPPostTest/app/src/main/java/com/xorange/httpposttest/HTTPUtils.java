@@ -8,6 +8,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.Map;
 
@@ -16,6 +17,7 @@ import java.util.Map;
  */
 
 public class HTTPUtils {
+
     /**
      * 发送 POST 请求到服务器并返回服务器信息
      * @param params 请求体内容

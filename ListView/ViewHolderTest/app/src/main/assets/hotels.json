@@ -1,0 +1,82 @@
+[
+{
+  "room_min_price": "387.00",
+  "picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/4cc/4ccfad980820bfc151a237b9443738a23a809ae5.jpg",
+  "url": "http://www.booking.com/hotel/cn/ang-hou-i-u-eng-ing-ing-heng-u-uo-e-ing-ian-u-he-an-ue-ong-en-ian.html",
+  "recommend_score": 92.9975,
+  "hotel_id": "1042934",
+  "hotel_name": "\u676d\u5dde\u8fc7\u5ba2\u9752\u5e74\u65c5\u820d\u6ee1\u89c9\u9647\u5206\u5e97"
+},
+{
+"room_min_price": "514.95",
+"picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/12a/12a1d8daae00d435317e64623449a2d58bb8c2db.jpg",
+"url": "http://www.booking.com/hotel/cn/huachen-international.html",
+"recommend_score": 85.865,
+"hotel_id": "67345",
+"hotel_name": "\u676d\u5dde\u534e\u8fb0\u56fd\u9645\u996d\u5e97"
+},
+{
+"room_min_price": "394.20",
+"picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/12f/12ffff913e74277f4fac5e0edb72aa227caa43c0.jpg",
+"url": "http://www.booking.com/hotel/cn/hangzhou-qingnianhui.html",
+"recommend_score": 84.82625,
+"hotel_id": "424018",
+"hotel_name": "\u676d\u5dde\u9752\u5e74\u4f1a\u9752\u5e74\u65c5\u820d"
+},
+{
+"room_min_price": "588.00",
+"picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/3ae/3aeae027ea8db3ee02e7c2f3d2647d57ffabf1c8.jpg",
+"url": "http://www.booking.com/hotel/cn/jing-shang-international-hangzhou.html",
+"recommend_score": 82.47625000000001,
+"hotel_id": "431504",
+"hotel_name": "\u676d\u5dde\u5c9a\u6c34\u56fd\u9645\u9752\u5e74\u65c5\u820d"
+},
+{
+"room_min_price": "318.60",
+"picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/fa4/fa4c9c5a92e300c59788c7558a570ae3a0ede0ed.jpg",
+"url": "http://www.booking.com/hotel/cn/holiday-inn-xiaoshan.html",
+"recommend_score": 82.13125,
+"hotel_id": "302437",
+"hotel_name": "\u676d\u5dde\u8427\u5c71\u4f17\u5b89\u5047\u65e5\u9152\u5e97 "
+},
+{
+"room_min_price": "438.00",
+"picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/0cc/0cc0a8a4379b547ff419009c5cbdeaa4f7045eca.jpg",
+"url": "http://www.booking.com/hotel/cn/hangzhou-bokai-boutique.html",
+"recommend_score": 81.0875,
+"hotel_id": "626086",
+"hotel_name": "\u676d\u5dde\u535a\u51ef\u897f\u6e56\u9152\u5e97"
+},
+{
+"room_min_price": "430.40",
+"picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/b53/b537c13e60f34efccd06a87ceeefb02be187dd97.jpg",
+"url": "http://www.booking.com/hotel/cn/holiday-inn-hangzhou-city-center.html",
+"recommend_score": 80.97625,
+"hotel_id": "317184",
+"hotel_name": "\u676d\u5dde\u56fd\u9645\u5047\u65e5\u9152\u5e97"
+},
+  {
+  "room_min_price": "411.72",
+  "picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/318/318476866e91d1cdc55314592d99166045295e5c.jpg",
+  "url": "http://www.booking.com/hotel/cn/ban-ye-yi-she.html",
+  "recommend_score": 80.225,
+  "hotel_id": "1079674",
+  "hotel_name": "\u534a\u91ce\u827a\u820d"
+  },
+  {
+  "room_min_price": "476.52",
+  "picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/080/080d1018362bebb3250ada3c99e1d0734ff9ea45.jpg",
+  "url": "http://www.booking.com/hotel/cn/hangzhou-jinma-palace.html",
+  "recommend_score": 76.0,
+  "hotel_id": "318787",
+  "hotel_name": "\u676d\u5dde\u91d1\u9a6c\u996d\u5e97"
+  },
+  {
+  "room_min_price": "484.00",
+  "picture": "http://aff.bstatic.com/images/hotel/max500_watermarked_chinese/ca6/ca67964521a571f2aeaeea273fa7731ee12157d9.jpg",
+  "url": "http://www.booking.com/hotel/cn/jinjiang-inn-hangzhou-west-lake-avenue-southern-song-inperial-street.html",
+  "recommend_score": 75.3,
+  "hotel_id": "1539491",
+  "hotel_name": "\u9526\u6c5f\u4e4b\u661f\u676d\u5dde\u897f\u6e56\u5927\u9053\u5357\u5b8b\u5fa1\u8857\u5e97"
+  }
+]
